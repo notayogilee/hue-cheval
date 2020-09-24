@@ -1,0 +1,159 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  animation: color 4s 1s;
+  overflow-x: hidden;
+
+  .image {
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background: url('../img/hue-cheval.png');
+    background-size: contain;
+    animation: invert 2.5s, fade-out 1.25s 3.5s;
+  }
+
+  .main {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    background: url('../img/neonArrow.jpg') no-repeat center center/cover;
+    animation: fade-in 0.5s;
+
+    #slide-right {
+      position: absolute;
+      top: 20%;
+      right: -30%;
+      color: #fff;
+      width: auto;
+      height: auto;
+      animation: slide-right 2s forwards;
+    }
+
+    #slide-left {
+      position: absolute;
+      color: #fff;
+      bottom: 10%;
+      left: -40%;
+      text-align: center;
+      width: 275px;
+      height: auto;
+      animation: slide-left 2s forwards;
+    }
+  }
+
+  .beer {
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/beerCanBackground.jpg') no-repeat center
+      center/cover;
+    // background-attachment: fixed;
+
+    #slide-right {
+      position: absolute;
+      top: 20%;
+      right: -30%;
+      color: #fff;
+      width: auto;
+      height: auto;
+      animation: slide-right 2s forwards;
+    }
+
+    #slide-left {
+      position: absolute;
+      color: #fff;
+      bottom: 10%;
+      left: -40%;
+      text-align: center;
+      width: 275px;
+      height: auto;
+      animation: slide-left 2s forwards;
+    }
+  }
+}
+
+@keyframes invert {
+  0% {
+    transform: rotate(225deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  40% {
+    transform: rotate(105deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  70% {
+    transform: rotate(60deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  85% {
+    transform: rotate(45deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  95% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    background: #fff;
+  }
+  75% {
+    background: red;
+  }
+  100% {
+    background: #333;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  100% {
+    right: 10%;
+  }
+}
+
+@keyframes slide-left {
+  100% {
+    left: 10%;
+  }
+}
