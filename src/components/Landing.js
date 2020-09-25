@@ -18,7 +18,7 @@ const Landing = () => {
   });
 
 
-  const [intro, setIntro] = useState(false);
+  const [intro, setIntro] = useState(true);
 
   setTimeout(() => {
     setIntro(false)
