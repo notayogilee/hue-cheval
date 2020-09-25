@@ -20,12 +20,12 @@ const Alphabet = () => {
 
       <div className="container">
 
-        {furniture.map(item =>
+        {/* {furniture.map(item =>
 
           <img src={item} alt="lamp" />
 
 
-        )}
+        )} */}
 
 
       </div>
