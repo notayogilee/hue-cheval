@@ -9,15 +9,15 @@ import fleuve from '../img/06_BOLDWIN_Fleuve.png';
 import saison from '../img/08_BOLDWIN_La_Saison_Est_Courte.png';
 const Beer = () => {
   return (
-    <div id="beer">
+    <div id="beer" className="second-section">
       <div className="carousel">
-        <a className="carousel-item" href="#one!"><img src={champ} /></a>
-        <a className="carousel-item" href="#two!"><img src={roses} /></a>
-        <a className="carousel-item" href="#three!"><img src={pecheur} /></a>
-        <a className="carousel-item" href="#four!"><img src={nord} /></a>
-        <a className="carousel-item" href="#five!"><img src={caux} /></a>
-        <a className="carousel-item" href="#six!"><img src={fleuve} /></a>
-        <a className="carousel-item" href="#seven!"><img src={saison} /></a>
+        <a className="carousel-item" href="#one!"><img src={champ} alt="" /></a>
+        <a className="carousel-item" href="#two!"><img src={roses} alt="" /></a>
+        <a className="carousel-item" href="#three!"><img src={pecheur} alt="" /></a>
+        <a className="carousel-item" href="#four!"><img src={nord} alt="" /></a>
+        <a className="carousel-item" href="#five!"><img src={caux} alt="" /></a>
+        <a className="carousel-item" href="#six!"><img src={fleuve} alt="" /></a>
+        <a className="carousel-item" href="#seven!"><img src={saison} alt="" /></a>
       </div>
       <h2 className="beer-title">Articulation visuelle — Boldwin</h2>
       <p className="beer-description">

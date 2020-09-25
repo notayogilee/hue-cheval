@@ -13,7 +13,7 @@ const Landing = () => {
     M.AutoInit();
   });
 
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(false);
 
   setTimeout(() => {
     setIntro(false)

@@ -1,25 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navbar.scss';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
 import logo from '../img/HueChevalTransparent.png';
 
 const Navbar = () => {
+  useEffect(() => {
+    let elems = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(elems, {
+      throttle: 500,
+      activeClass: "active",
+      scrollOffset: 300,
+      getActiveElement: function (id) {
+        return 'a[href="#' + id + '"]';
+      }
+    }, []);
+  });
+
   return (
-    <nav id="navbar">
+    <div id="navbar">
       <div className="logo">
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
       </div>
-      <div className="nav-list">
+      <div className="items">
         <ul>
-          <li><a href="/signaletique" className="text">
-            à propos</a></li>
-          <li><a href="/Baldwin" className="text">
-            practiquons</a></li>
-          <li><a href="/alphabet" className="text">connectons</a></li>
+          <li className="item"><a href="#main">Signalétique</a></li>
+          <li className="item"><a href="#beer">Boldwin</a></li>
+          <li className="item"><a href="#alphabet">Alphabet</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
   )
 };
 
