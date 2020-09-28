@@ -16,19 +16,19 @@ const Alphabet = () => {
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="input-field col s12">
-                <input id="nom" type="text" />
+                <input id="nom" type="text" name="name" />
                 <label htmlFor="name">Nom</label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="email" type="email" />
+                <input id="email" type="email" name="email" />
                 <label htmlFor="email">Email</label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input id="subject" type="text" />
+                <input id="subject" type="text" name="subject" />
                 <label htmlFor="name">Subject</label>
               </div>
             </div>
