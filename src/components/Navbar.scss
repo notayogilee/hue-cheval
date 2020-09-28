@@ -31,3 +31,11 @@
     }
   }
 }
+
+// responsive cell
+
+@media (max-width: 420px) {
+  #navbar .items {
+    display: none;
+  }
+}

@@ -39,21 +39,37 @@
   background: url('../img/beerCanBackground.jpg') no-repeat center center/cover;
 }
 
-.background-roses {
-  background: pink;
+// responsive cell
+
+@media (max-width: 420px) {
+  .beer-title {
+    font-size: 25px;
+    top: 15% !important;
+    text-align: center;
+  }
+
+  .beer-description {
+    display: none;
+  }
+
+  .carousel {
+    top: 40% !important;
+  }
 }
-.background-peacheur {
-  background: purple;
+
+// responsive cell horizontal
+@media (max-height: 420px) {
+  #beer {
+    top: 110vh;
+  }
+
+  .carousel {
+    display: none;
+  }
 }
-.background-nord {
-  background: blue;
-}
-.background-caux {
-  background: red;
-}
-.background-flueve {
-  background: turquoise;
-}
-.background-saison {
-  background: green;
+
+@media (max-height: 375px) {
+  .beer-title {
+    display: none;
+  }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Alphabet.scss';
+import './Contact.scss';
 import alphabetVideo from '../img/alphabet.mp4';
 
-const Alphabet = () => {
+const Contact = () => {
 
   return (
     <section id="alphabet" className="third-section">
@@ -42,19 +42,25 @@ const Alphabet = () => {
               envoyer</button>
           </form>
         </div>
-        <div className="contact-phone">
-          <i className="material-icons">call</i>{' '}
-          <p>{' '} 514-523-0790</p>
-        </div>
-        <div className="contact-location">
-          <i className="material-icons">location_on</i>
-          <p>5425 rue de Bordeaux,
-          local 103, Montréal, Québec
+        <div className="bottom">
+          <div className="contact-phone">
+            <i className="material-icons">call</i>{' '}
+            <p>{' '} 514-523-0790</p>
+          </div>
+          <div className="contact-location">
+            <i className="material-icons">location_on</i>
+            <p>5425 rue de Bordeaux,
+            local 103, Montréal, Québec
    H2H 2P9</p>
+          </div>
+          <div className="flip-display">
+            <i className="material-icons">screen_rotation</i>
+          </div>
         </div>
+
       </div>
     </section>
   )
 };
 
-export default Alphabet;
+export default Contact;

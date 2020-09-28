@@ -6,7 +6,7 @@ import './Landing.scss';
 import Navbar from './Navbar';
 import Main from './Main';
 import Beer from './Beer';
-import Alphabet from './Alphabet';
+import Contact from './Contact';
 
 const Landing = () => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const Landing = () => {
           <Navbar />
           <Main />
           <Beer />
-          <Alphabet />
+          <Contact />
         </Fragment>
       }
     </div>

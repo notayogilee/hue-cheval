@@ -5,7 +5,7 @@
   width: 100%;
   background-color: #333;
   background: url('../img/croppedNeonArrow.jpg') no-repeat center center/cover;
-  animation: fade-in 0.5s;
+
   font-family: 'Warnes', cursive;
   text-shadow: 0 0 5px rgb(243, 194, 194), 0 0 10px rgb(124, 56, 56),
     0 0 15px#f3c23d, 0 0 20px#f3c23d, 0 0 25px#f3c23d, 0 0 30px#f3c23d,
@@ -43,5 +43,49 @@
 @keyframes slide-left {
   100% {
     left: 42%;
+  }
+}
+
+// responsive tablet
+@media (max-width: 768px) {
+  #slide-left {
+    bottom: 15% !important;
+  }
+
+  @keyframes slide-right {
+    100% {
+      right: 30%;
+    }
+  }
+
+  @keyframes slide-left {
+    100% {
+      left: 32%;
+    }
+  }
+}
+
+// responsive cell
+@media (max-width: 420px) {
+  #slide-right {
+    font-size: 20px;
+  }
+
+  #slide-left {
+    width: 300px !important;
+    // height: 100px;
+    bottom: 18% !important;
+  }
+
+  @keyframes slide-right {
+    100% {
+      right: 11%;
+    }
+  }
+
+  @keyframes slide-left {
+    100% {
+      left: 15%;
+    }
   }
 }
