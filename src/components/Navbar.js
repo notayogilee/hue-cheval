@@ -8,13 +8,10 @@ const Navbar = () => {
   useEffect(() => {
     let elems = document.querySelectorAll('.scrollspy');
     M.ScrollSpy.init(elems, {
-      throttle: 500,
+      throttle: 10,
       activeClass: "active",
-      scrollOffset: 300,
-      getActiveElement: function (id) {
-        return 'a[href="#' + id + '"]';
-      }
-    }, []);
+      scrollOffset: 300
+    });
   });
 
   return (

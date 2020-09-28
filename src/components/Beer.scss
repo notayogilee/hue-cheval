@@ -1,4 +1,4 @@
-.second-section {
+#beer {
   position: relative;
   display: flex;
   align-content: center;
@@ -6,7 +6,6 @@
   top: 122.5vh;
   height: 125vh;
   width: 100%;
-  background: url('../img/beerCanBackground.jpg') no-repeat center center/cover;
 
   .carousel {
     position: abslolute;
@@ -34,4 +33,27 @@
     width: 80%;
     text-align: center;
   }
+}
+
+.background-champs {
+  background: url('../img/beerCanBackground.jpg') no-repeat center center/cover;
+}
+
+.background-roses {
+  background: pink;
+}
+.background-peacheur {
+  background: purple;
+}
+.background-nord {
+  background: blue;
+}
+.background-caux {
+  background: red;
+}
+.background-flueve {
+  background: turquoise;
+}
+.background-saison {
+  background: green;
 }

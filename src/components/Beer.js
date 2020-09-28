@@ -7,11 +7,13 @@ import nord from '../img/04_BOLDWIN_Nord_Amerique.png';
 import caux from '../img/05_BOLDWIN_Caux.png';
 import fleuve from '../img/06_BOLDWIN_Fleuve.png';
 import saison from '../img/08_BOLDWIN_La_Saison_Est_Courte.png';
+
 const Beer = () => {
+
   return (
-    <div id="beer" className="second-section">
+    <div id="beer" className="background-champs" >
       <div className="carousel">
-        <a className="carousel-item" href="#one!"><img src={champ} alt="" /></a>
+        <a className="carousel-item" href="#one!"><img src={champ} alt="background-champs" /></a>
         <a className="carousel-item" href="#two!"><img src={roses} alt="" /></a>
         <a className="carousel-item" href="#three!"><img src={pecheur} alt="" /></a>
         <a className="carousel-item" href="#four!"><img src={nord} alt="" /></a>
@@ -24,6 +26,7 @@ const Beer = () => {
         Le succès retentissant de l’identité que nous avons développé pour les bières biologiques Boldwin nous a conduit à déployer son langage sur tout un essaim de canevas. Allant de la création de contenu rédactionnel, à l’organisation rythmique de leurs nouveaux signes sur des affiches, des balluchons et des paquetages. Nous constatons avec plaisir que le symbolisme du territoire québécois mobilise l’intérêt.
 </p>
     </div>
+
   )
 };
 
