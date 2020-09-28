@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul>
           <li className="item"><a href="#main">Signalétique</a></li>
           <li className="item"><a href="#beer">Boldwin</a></li>
-          <li className="item"><a href="#alphabet">Alphabet</a></li>
+          <li className="item"><a href="#alphabet">Contact</a></li>
         </ul>
       </div>
     </div>

@@ -4,8 +4,6 @@
   top: 235vh;
   height: 100vh;
   width: 100%;
-  justify-content: center;
-  text-align: center;
 
   .alphabet-video {
     object-fit: cover;
@@ -13,28 +11,72 @@
     min-width: 100%;
     z-index: -100;
   }
-  h1 {
-    position: absolute;
-    transform: translateY(100%);
-
-    img {
-      width: 80%;
-    }
-  }
 
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fff;
+    padding: 1rem;
+    height: 80%;
+    width: 80%;
     position: absolute;
-    align-content: center;
-    justify-content: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.9;
-    img {
-      height: 450px;
-      width: auto;
-      border-radius: 50%;
-      animation: fadeIn 1s, fadeOut 1s;
+    transform: translate(-50%, -40%);
+
+    .background {
+      background: rgba(255, 255, 255, 0.8);
+      width: 70vw;
+      padding: 1rem;
+      border-radius: 20px;
+    }
+
+    .input-field label {
+      color: #000;
+    }
+
+    .input-field {
+      color: #000;
+    }
+
+    .input-field input[type='text']:focus + label,
+    .input-field input[type='email']:focus + label,
+    .input-field textarea[type='text']:focus {
+      color: #333;
+    }
+
+    .input-field input[type='text']:focus,
+    .input-field input[type='email']:focus,
+    .input-field textarea[type='text']:focus {
+      border-bottom: 1px solid #333;
+      box-shadow: 0 1px 0 0 #333;
+    }
+
+    // .input-field input[type='text'].valid {
+    //   border-bottom: 1px solid #333;
+    //   box-shadow: 0 1px 0 0 #333;
+    // }
+
+    #textarea1 label {
+      color: #fff;
+    }
+
+    // img {
+    //   height: 450px;
+    //   width: auto;
+    //   border-radius: 50%;
+    // }
+
+    .contact-phone,
+    .contact-location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -48,22 +90,4 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
 }
