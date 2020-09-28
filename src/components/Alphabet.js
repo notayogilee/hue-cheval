@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React from 'react';
 import './Alphabet.scss';
-import alphabetLogo from '../img/logo-alphabet.svg';
 import alphabetVideo from '../img/alphabet.mp4';
-import lamp from '../img/lampe.jpg';
-import table from '../img/Table.jpg';
-import ladder from '../img/Echelle.jpg';
 
 const Alphabet = () => {
-
-  // const furniture = [lamp, table, ladder];
-  // const [image, setImage] = useState(lamp);
-
-  // useEffect(() => {
-
-  //   {
-  //     furniture.forEach((piece, i) => {
-  //       setInterval(() => {
-  //         setImage(piece);
-  //       }, (i + 1) * 2000)
-  //     })
-  //   }
-  // }, [])
 
   return (
     <section id="alphabet" className="third-section">
@@ -31,7 +12,8 @@ const Alphabet = () => {
       <div className="container">
 
         <div className="row ">
-          <form className="background col s12">
+          <form className="background col s12" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="input-field col s12">
                 <input id="nom" type="text" />
@@ -46,7 +28,13 @@ const Alphabet = () => {
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <textarea id="textarea1" className="materialize-textarea"></textarea>
+                <input id="subject" type="text" />
+                <label htmlFor="name">Subject</label>
+              </div>
+            </div>
+            <div className="row">
+              <div className="input-field col s12">
+                <textarea id="textarea1" name="message" className="materialize-textarea"></textarea>
                 <label htmlFor="textarea1">Message</label>
               </div>
             </div>
