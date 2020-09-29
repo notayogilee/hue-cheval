@@ -1,13 +1,17 @@
 import React from 'react';
 import './Contact.scss';
-import alphabetVideo from '../img/alphabet.mp4';
+import alphabetVideoMP4 from '../img/alphabet-video-LQ.mp4';
+import alphabetVideoWEBM from '../img/alphabet-video-LQ.webm';
 
 const Contact = () => {
 
   return (
     <section id="alphabet" className="third-section">
 
-      <video src={alphabetVideo} className="alphabet-video" autoPlay loop muted > </video>
+      <video className="alphabet-video" autoPlay loop muted >
+        <source src={alphabetVideoWEBM} type="video/webm" />
+        <source src={alphabetVideoMP4} type="video/mp4" />
+      </video>
 
       <div className="container">
 
