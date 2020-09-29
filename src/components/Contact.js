@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.scss';
 import alphabetVideoMP4 from '../img/alphabet-video-LQ.mp4';
-import alphabetVideoWEBM from '../img/alphabet-video-LQ.webm';
 
 const Contact = () => {
 
@@ -9,7 +8,6 @@ const Contact = () => {
     <section id="alphabet" className="third-section">
 
       <video className="alphabet-video" autoPlay loop muted >
-        <source src={alphabetVideoWEBM} type="video/webm" />
         <source src={alphabetVideoMP4} type="video/mp4" />
       </video>
 
